@@ -1,5 +1,4 @@
 <?php
-
 try {
     require_once "includes/connect.php";
     $sql = ("SELECT *FROM players ");
@@ -28,22 +27,42 @@ try {
 
 <body>
     <section>
-<button><a href="createoptions.php">Back</a></button>
+        <button><a href="createoptions.php">Back</a></button>
         <?php
         if (empty($result)) {
             echo "the database is empty";
             header("location: createoptions.php");
         } else {
+
             foreach ($result as $rows) {
-                $id = $rows['ID'];
                 echo "<br>";
-            $id = $rows['ID'];
+                $id = $rows["ID"];
+                $pname = $rows["PNAME"];
+                $club = $rows["CLUB"];
+                $position = $rows["POSITION"];
+                echo "<br>";
+
+
                 echo "<p>" . $rows["PNAME"] . "</p>";
-                echo "<p>" . $rows["CLUB"] . "</p>";
+                echo "<p>" . $rows["CLUB"]  . "</p>";
                 echo "<p>" . $rows["POSITION"] . "</p>";
-                // echo ($id); dont need to show this one
+                
+                echo "<p>" . "<a href='update.php?id=$id&pname=$pname&club=$club&position=$position'>
+                          <button> edit </button>
+                         </a>" . "</p>";
                 echo "<br>";
-                echo "<a href=delete.php?id=$id><button>delete</button></a>";
+
+                // this is chat gpted way, still works good 
+    //             echo "<p><a href='update.php?id=" . urlencode($id) .
+    //  "&pname=" . urlencode($pname) .
+    //  "&club=" . urlencode($club) .
+    //  "&position=" . urlencode($position) . "'>edit</a></p>";
+
+                
+                
+                
+                
+                echo "<button> <a href=delete.php?id=$id> delete </a> </button>";
                 echo "<br>";
             }
         }
