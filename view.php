@@ -46,22 +46,22 @@ try {
                 echo "<p>" . $rows["PNAME"] . "</p>";
                 echo "<p>" . $rows["CLUB"]  . "</p>";
                 echo "<p>" . $rows["POSITION"] . "</p>";
-                
+
                 echo "<p>" . "<a href='update.php?id=$id&pname=$pname&club=$club&position=$position'>
                           <button> edit </button>
                          </a>" . "</p>";
                 echo "<br>";
 
                 // this is chat gpted way, still works good 
-    //             echo "<p><a href='update.php?id=" . urlencode($id) .
-    //  "&pname=" . urlencode($pname) .
-    //  "&club=" . urlencode($club) .
-    //  "&position=" . urlencode($position) . "'>edit</a></p>";
+                //             echo "<p><a href='update.php?id=" . urlencode($id) .
+                //  "&pname=" . urlencode($pname) .
+                //  "&club=" . urlencode($club) .
+                //  "&position=" . urlencode($position) . "'>edit</a></p>";
 
-                
-                
-                
-                
+
+
+
+
                 echo "<button> <a href=delete.php?id=$id> delete </a> </button>";
                 echo "<br>";
             }
