@@ -11,7 +11,7 @@ try {
   $sql = "CREATE DATABASE IF NOT EXISTS playermanager";
   // use exec() because no results are returned
   $pdo->exec($sql);
-  echo "Database created successfully<br>";
+  // echo "Database created successfully<br>";
 } catch (PDOException $e) {
   echo "error" . $e->getMessage();
 }
