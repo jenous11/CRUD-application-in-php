@@ -4,7 +4,7 @@
         $club     = $_POST["club"];
         $position = $_POST["position"];
         try {
-            require_once "connect.php";
+            require "connect.php";
             $sql = "INSERT INTO players(PNAME,CLUB,POSITION) VALUES (:pname ,:club, :position);";
             $stmt = $pdo->prepare($sql);
             $stmt->bindParam(":pname", $pname);

@@ -12,7 +12,7 @@
 <body>
     <h1 class="text-sm fs mt-4 fs-3 ">Enter Player Details</h1>
     <div class="d-flex mt-5  justify-content-center ">
-        <form action="insert.php" method="post">
+        <form action="includes/insert.php" method="post">
             <div class="mb-3">
                 <label for="pname" class="form-label">pname</label>
                 <input type="text" class="form-control form-control-lg" name="name" ">
