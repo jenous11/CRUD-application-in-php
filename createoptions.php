@@ -14,11 +14,11 @@
     <div class="d-flex mt-5  justify-content-center ">
         <form action="includes/insert.php" method="post">
             <div class="mb-3">
-                <label for="pname" class="form-label">pname</label>
+                <label for="pname" class="form-label">Pname</label>
                 <input type="text" class="form-control form-control-lg" name="name" ">
   </div>
   <div class=" mb-3">
-                <label for="club" class="form-label">club</label>
+                <label for="club" class="form-label">Club</label>
                 <input type="text" class="form-control " name="club">
             </div>
             <div class="mb-3 ">
