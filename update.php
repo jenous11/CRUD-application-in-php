@@ -1,19 +1,19 @@
     <!DOCTYPE html>
     <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
+
     <body>
         <button><a href="view.php">Back</a></button>
         <br>
         <br>
-
     </body>
 
     </html>
-
     <?php
     if (isset($_GET['id'])) {
         $id =    $_GET['id'];
@@ -45,7 +45,7 @@
     <body>
         <br>
         <br>
-
+                
         <form action="update.php" method="get">
             id:
             <input type="text" name="id" placeholder="enter id">
@@ -63,10 +63,10 @@
             <input type="submit" name="submit">
         </form>
 
-
     </body>
 
     </html>
+
     <?php
     try {
         require "includes/connect.php";

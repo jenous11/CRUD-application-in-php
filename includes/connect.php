@@ -1,7 +1,7 @@
 <?php
 $dsn = "mysql:host=localhost;dbname=playermanager";
 $username = "root";
-$password = "";
+$password = "chelse@11";
 
 try {
     $pdo = new pdo($dsn, $username, $password);
