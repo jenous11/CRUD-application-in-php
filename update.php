@@ -45,7 +45,7 @@
     <body>
         <br>
         <br>
-                
+
         <form action="update.php" method="get">
             id:
             <input type="text" name="id" placeholder="enter id">
@@ -63,7 +63,7 @@
             <input type="submit" name="submit">
         </form>
         <div>
-            
+
         </div>
 
     </body>
