@@ -11,7 +11,7 @@
         <br>
     </body>
     </html>
-    <!-- php logic  for getting stuff -->
+    <!-- php logic  for  when id is set and method is get  -->
     <?php
     if (isset($_GET['id'])) {
         $id =    $_GET['id'];
@@ -19,17 +19,26 @@
         $club =  $_GET['club'];
         $position = $_GET['position'];
     }
-        
-        echo $id;
-        echo "<br>";
+    // echoing out outputs
+    echo "<div class='d-flex justify-content-center'>";
+    echo"<form action='update.php' method='get'>";    
+    echo"<p contenteditable='true'>$id</p>";
+        // echo "<br>";
         echo  $pname;
         echo "<br>";
         echo  $club;
         echo "<br>";
         echo  $position;
-        echo "<br>";
-    ?>
+        // echo "<br>";
+        // echo"<input></input>";
+    echo"</form>";    
 
+    echo "</div>";
+        // echo "<br>";
+        // echo "<br>";
+        // echo "<br>";
+    
+    ?>
     <!-- Giving inputs to change them -->
     <!DOCTYPE html>
     <html lang="en">
@@ -39,51 +48,37 @@
         <title>Update Form</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     </head>
-    <body> 
-        <!-- <br> -->
-         <!-- <form action="update.php" method="get">
-            id:
-            <input type="text" name="id" placeholder="enter id" contenteditable="true">
-            <br>
-            name:
-            <input type="text" name="pname" placeholder="enter pname">
-            <br>
-            club:
-            <input type="text" name="club" placeholder="enter club">
-            <br>
-            position:
-            <input type="text" name="position" placeholder="enter position">
-            <br>
-            <input type="submit" name="submit">
-        </form>
-         -->
+    <body>
 
         <!-- the bootstrapped ones -->
-        <form action="update.php " method="get" contenteditable="true">
+         <form action="update.php " method="get" contenteditable="false" class="d-grid justify-content-center">
+             ID
             <div class="mb-3">
-                <label for="exampleInputID" class="form-label">ID</label>
-                <input type="text" name="id" >
+            <input type="text" name="id" >
+            <p contenteditable="true"><?php echo $id?> </p>
             </div>
+            Pname
             <div class="mb-3">
-                <label for="exampleInputName" class="form-label">Pname</label>
-                <input type="text" name="pname" >
+            <input type="text" name="pname" >
+            <p contenteditable="true"><?php echo $pname?> </p>
+
             </div>
+               Club
             <div class="mb-3">
-                <label type="form-check-label" for="exampleCheck1">Club</label>
-                <input type="text" name="club" >
+            <input type="text" name="club" >
             </div>
+            Position
             <div class="mb-3">
-                <label type="form-check-label" for="exampleCheck1">Position</label>
-                <input type="text" name="position" >
+            <input type="text" name="position" >
             </div>
+            <!-- <textarea contenteditable="true"><//?php echo $id?></textarea> -->
             <button type="submit" class="btn btn-primary">Submit</button>
         </form> 
-        
     </body>
-    </html> 
-        
-        <!-- php logic for updating -->
-        <?php
+    </html>  
+
+        <!-- php logic for updating the database-->
+    <?php
     try {
         require "includes/connect.php";
         $sql = "UPDATE players SET PNAME = :pname, CLUB= :club, POSITION= :position WHERE ID= :id;";

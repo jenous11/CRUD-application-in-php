@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 
 </head>
-
 <body>
     <h1 class="text-sm fs mt-4 fs-3 ">Enter Player Details</h1>
     <div class="d-flex mt-5  justify-content-center ">
@@ -16,8 +15,8 @@
             <div class="mb-3">
                 <label for="pname" class="form-label">Pname</label>
                 <input type="text" class="form-control form-control-lg" name="name" ">
-  </div>
-  <div class=" mb-3">
+                </div>
+                <div class=" mb-3">
                 <label for="club" class="form-label">Club</label>
                 <input type="text" class="form-control " name="club">
             </div>
@@ -28,9 +27,6 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-
     </div>
-
 </body>
-
 </html>

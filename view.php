@@ -13,7 +13,6 @@ try {
     echo "error" . $e->getMessage();
     echo "<br>";
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -24,9 +23,7 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-
 </head>
-
 <body>
     <button><a href="createoptions.php">Back</a></button>
     <div class="d-flex justify-content-center ">
@@ -67,7 +64,6 @@ try {
             ?>
         </table>
     </div>
-
 </body>
 
 </html>
