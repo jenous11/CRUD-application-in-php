@@ -54,22 +54,22 @@
          <form action="update.php " method="get" contenteditable="false" class="d-grid justify-content-center">
              ID
             <div class="mb-3">
-            <input type="text" name="id" >
+            <input type="text" name="id" required >
             <p contenteditable="true"><?php echo $id?> </p>
             </div>
             Pname
             <div class="mb-3">
-            <input type="text" name="pname" >
+            <input type="text" name="pname" required>
             <p contenteditable="true"><?php echo $pname?> </p>
 
             </div>
                Club
             <div class="mb-3">
-            <input type="text" name="club" >
+            <input type="text" name="club" required >
             </div>
             Position
             <div class="mb-3">
-            <input type="text" name="position" >
+            <input type="text" name="position" required >
             </div>
             <!-- <textarea contenteditable="true"><//?php echo $id?></textarea> -->
             <button type="submit" class="btn btn-primary">Submit</button>

@@ -14,15 +14,15 @@
         <form action="includes/insert.php" method="post">
             <div class="mb-3">
                 <label for="pname" class="form-label">Pname</label>
-                <input type="text" class="form-control form-control-lg" name="name" ">
+                <input type="text" class="form-control form-control-lg" name="name"  required">
                 </div>
                 <div class=" mb-3">
                 <label for="club" class="form-label">Club</label>
-                <input type="text" class="form-control " name="club">
+                <input type="text" class="form-control " name="club" required>
             </div>
             <div class="mb-3 ">
                 <label class="form-label" for="position">Position</label>
-                <input type="text" class="form-control" name="position">
+                <input type="text" class="form-control" name="position" required>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
