@@ -14,7 +14,7 @@
     <!-- php logic  for  when id is set and method is get  -->
     <?php
     if (isset($_GET['id'])) {
-        $id =    $_GET['id'];
+        // $id =    $_GET['id'];
         $pname = $_GET['pname'];
         $club =  $_GET['club'];
         $position = $_GET['position'];
@@ -22,7 +22,7 @@
     // echoing out outputs
     echo "<div class='d-flex justify-content-center'>";
     echo"<form action='update.php' method='get'>";    
-    echo"<p contenteditable='true'>$id</p>";
+    // echo"<p contenteditable='true'>$id</p>";
         // echo "<br>";
         echo  $pname;
         echo "<br>";
@@ -75,10 +75,10 @@
         </form>  -->
 
         <form action="update.php" method="get">
-  <div class="mb-3">
+  <!-- <div class="mb-3">
     <label for="plantext" class="form-label">id </label>
     <input type="text" name="id" class="form-control"  aria-describedby="emailHelp">
-  </div>
+  </div> -->
 
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">pname</label>

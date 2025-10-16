@@ -26,7 +26,10 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+<a href="view.php"><button class="btn btn-primary d-flex justify-content-center">show list</button></a>
     </div>
-    </div>
+</div>
+
+
 </body>
 </html>

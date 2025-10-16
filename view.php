@@ -55,7 +55,8 @@ try {
                     echo "<td>" . $rows["PNAME"]."</td>";
                     echo "<td>" . $rows["CLUB"]."</td>";
                     echo "<td>" . $rows["POSITION"]."</td>";
-                    echo "<td>" . "<a href='update.php?id=$id&pname=$pname&club=$club&position=$position'> <button> edit </button> </a>" . "</td>";
+                    echo "<td>" . "<a href='update.php?pname=$pname&club=$club&position=$position'> <button> edit </button> </a>" . "</td>";
+                    // echo "<td>" . "<a href='update.php?id=$id&pname=$pname&club=$club&position=$position'> <button> edit </button> </a>" . "</td>";
                     echo "<td>" . "<a href=delete.php?id=$id><button>delete</button></a>"."</td>";
                     echo "</tr>";
                     echo "</tbody>";
