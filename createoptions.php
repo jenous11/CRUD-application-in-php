@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1 class="text-sm fs mt-4 fs-3 ">Enter Player Details</h1>
-    <div class="d-flex mt-5  justify-content-center ">
+    <div class="d-grid mt-5  justify-content-center ">
         <form action="includes/insert.php" method="post">
             <div class="mb-3">
                 <label for="pname" class="form-label">Pname</label>
@@ -26,7 +26,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-<a href="view.php"><button class="btn btn-primary d-flex justify-content-center">show list</button></a>
+        <a href="view.php"><button class="btn btn-primary mt-3">show list</button></a>
     </div>
 </div>
 
