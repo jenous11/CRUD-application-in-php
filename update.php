@@ -51,7 +51,7 @@
     <body>
 
         <!-- the bootstrapped ones -->
-         <form action="update.php " method="get" contenteditable="false" class="d-grid justify-content-center">
+         <!-- <form action="update.php " method="get" contenteditable="false" class="d-grid justify-content-center">
              ID
             <div class="mb-3">
             <input type="text" name="id" required >
@@ -71,9 +71,33 @@
             <div class="mb-3">
             <input type="text" name="position" required >
             </div>
-            <!-- <textarea contenteditable="true"><//?php echo $id?></textarea> -->
             <button type="submit" class="btn btn-primary">Submit</button>
-        </form> 
+        </form>  -->
+
+        <form action="update.php" method="get">
+  <div class="mb-3">
+    <label for="plantext" class="form-label">id </label>
+    <input type="text" name="id" class="form-control"  aria-describedby="emailHelp">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">pname</label>
+    <input type="text" name="pname"class="form-control" id="exampleInputPassword1">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">club</label>
+    <input type="text" name="club"class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">position</label>
+    <input type="text" name="position"class="form-control" id="exampleInputPassword1">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
     </body>
     </html>  
 
