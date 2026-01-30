@@ -1,7 +1,7 @@
 <?php
 $dsn = "mysql:host=localhost;dbname=playemanager";
-$username = "root";
-$password = "chelse@11";
+$username = "brad";
+$password = "password";
 
 try {
   require_once "connect.php";
